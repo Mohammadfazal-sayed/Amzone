@@ -6,3 +6,10 @@ aws ec2 run-instances \
     --associate-public-ip-address \
     --key-name sbk \
     --region us-east-1
+    
+    
+    
+    
+    
+    
+    #123#
