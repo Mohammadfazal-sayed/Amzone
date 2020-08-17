@@ -5,4 +5,4 @@ aws ec2 run-instances \
     --security-group-ids sg-07142950944cc283c \
     --associate-public-ip-address \
     --key-name sbk \
-    --region us-east-1
+    --region us-east-2
