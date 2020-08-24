@@ -1,4 +1,4 @@
-ssh ubuntu@$ip '
+ssh ubuntu@172.31.59.183 '
 
 sudo apt-get update
 
