@@ -3,13 +3,29 @@ sudo chmod 777 -R /etc/nagios/
 sudo echo "allowed_hosts=127.0.0.1,172.31.63.150" >> /etc/nagios/nrpe.cfg '
 
 ssh ubuntu@172.31.63.150 '
-sudo chmod 777 -R /usr/local/nagios/
+sudo chmod 777 -R /usr/local/nagios/servers
 sudo echo " 
 define host {
         use                          linux-server
         host_name                    Nagiosslave2
         alias                        Ubuntu Host
         address                      172.31.59.183
+        register                     1
+}
+
+define host {
+        use                          linux-server
+        host_name                    NagiosSlave
+        alias                        Ubuntu Host
+        address                      172.31.57.16
+        register                     1
+}
+
+define host {
+        use                          linux-server
+        host_name                    NagiosSlave
+        alias                        Ubuntu Host
+        address                      172.31.57.16
         register                     1
 }
 
