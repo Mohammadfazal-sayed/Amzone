@@ -90,5 +90,7 @@ define service {
       notification_period             24x7
       notifications_enabled           1
       register                       1
-} '
+}
+:wq!
+'
 
