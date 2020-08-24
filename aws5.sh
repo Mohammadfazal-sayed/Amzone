@@ -103,6 +103,7 @@ define service {
       register                       1
 }
 " >> /usr/local/nagios/etc/servers/host3.cfg
+sudo systemctl
 
 '
 
