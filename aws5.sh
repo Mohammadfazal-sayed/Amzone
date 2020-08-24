@@ -1,7 +1,11 @@
 ssh ubuntu@$ip '
+
 sudo apt-get update
+
 sudo apt-get install nagios-nrpe-server nagios-plugins -y
-vim /etc/nagios/nrpe.cfg
+
+sudo vim /etc/nagios/nrpe.cfg
+
 #############################################################################
 #
 #  Sample NRPE Config File
@@ -62,7 +66,7 @@ server_port=5666
 # and you do not want nrpe to bind on all interfaces.
 # NOTE: This option is ignored if NRPE is running under either inetd or xinetd
 
-server_address=$ip
+server_address=172.31.59.183
 
 
 
@@ -107,7 +111,7 @@ nrpe_group=nagios
 #
 # NOTE: This option is ignored if NRPE is running under either inetd or xinetd
 
-allowed_hosts=127.0.0.1,54.236.49.211
+allowed_hosts=127.0.0.1,172.31.63.150
 
 
 
