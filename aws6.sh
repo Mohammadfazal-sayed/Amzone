@@ -2,8 +2,7 @@ ssh ubuntu@172.31.63.150 '
 
 
 
-sudo vim /usr/local/nagios/etc/servers/host3.cfg
-
+sudo echo " 
 define host {
         use                          linux-server
         host_name                    Nagiosslave2
@@ -91,6 +90,7 @@ define service {
       notifications_enabled           1
       register                       1
 }
-:wq!
+" >> /usr/local/nagios/etc/servers/host3.cfg
+
 '
 
