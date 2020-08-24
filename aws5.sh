@@ -380,6 +380,8 @@ include=/etc/nagios/nrpe_local.cfg
 
 include_dir=/etc/nagios/nrpe.d/
 
+:wq!
+
 
 sudo service nagios-nrpe-server restart
 '
